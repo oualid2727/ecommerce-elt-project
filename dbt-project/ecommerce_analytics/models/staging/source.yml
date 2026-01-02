@@ -1,0 +1,69 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: ECOMMERCE_DB
+    schema: RAW_DATA
+    description: "Raw data loaded by Airbyte"
+    
+    tables:
+      - name: clients
+        description: "Customer information from MySQL"
+        columns:
+          - name: clientid
+            description: "Primary key for clients"
+            tests:
+              - unique
+              - not_null
+          - name: nomclient
+            description: "Customer name"
+          - name: pays
+            description: "Customer country"
+          - name: dateinscription
+            description: "Registration date"
+      
+      - name: produits
+        description: "Product catalog from CSV"
+        columns:
+          - name: produitid
+            description: "Primary key for products"
+            tests:
+              - unique
+              - not_null
+          - name: nomproduit
+            description: "Product name"
+          - name: categorie
+            description: "Product category"
+          - name: prix
+            description: "Product price"
+            tests:
+              - not_null
+      
+      - name: commandes
+        description: "Order transactions from JSON"
+        columns:
+          - name: commandeid
+            description: "Primary key for orders"
+            tests:
+              - unique
+              - not_null
+          - name: clientid
+            description: "Foreign key to clients"
+            tests:
+              - not_null
+          - name: produitid
+            description: "Foreign key to products"
+            tests:
+              - not_null
+          - name: montanttotal
+            description: "Total order amount"
+            tests:
+              - not_null
+      
+      - name: raw_paiements
+        description: "Payment logs from log files"
+        columns:
+          - name: commande_id
+            description: "Foreign key to orders"
+          - name: statut_paiement
+            description: "Payment status"

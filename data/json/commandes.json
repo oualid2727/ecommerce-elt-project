@@ -1,0 +1,10 @@
+{"CommandeID": 1001, "ClientID": 2001, "ProduitID": 3001, "Quantite": 2, "MontantTotal": 45.98, "DateCommande": "2024-09-30", "Statut": "Validée"}
+{"CommandeID": 1002, "ClientID": 2002, "ProduitID": 3002, "Quantite": 1, "MontantTotal": 99.99, "DateCommande": "2024-09-30", "Statut": "Annulée"}
+{"CommandeID": 1003, "ClientID": 2001, "ProduitID": 3003, "Quantite": 3, "MontantTotal": 150.00, "DateCommande": "2024-09-29", "Statut": "En attente"}
+{"CommandeID": 1004, "ClientID": 2003, "ProduitID": 3001, "Quantite": 1, "MontantTotal": 22.99, "DateCommande": "2024-09-28", "Statut": "Validée"}
+{"CommandeID": 1005, "ClientID": 2004, "ProduitID": 3005, "Quantite": 2, "MontantTotal": 70.00, "DateCommande": "2024-09-28", "Statut": "Validée"}
+{"CommandeID": 1006, "ClientID": 2005, "ProduitID": 3004, "Quantite": 5, "MontantTotal": 79.95, "DateCommande": "2024-09-27", "Statut": "Validée"}
+{"CommandeID": 1007, "ClientID": 2002, "ProduitID": 3003, "Quantite": 1, "MontantTotal": 50.00, "DateCommande": "2024-09-27", "Statut": "Validée"}
+{"CommandeID": 1008, "ClientID": 2006, "ProduitID": 3002, "Quantite": 1, "MontantTotal": 99.99, "DateCommande": "2024-09-26", "Statut": "En attente"}
+{"CommandeID": 1009, "ClientID": 2007, "ProduitID": 3001, "Quantite": 3, "MontantTotal": 68.97, "DateCommande": "2024-09-26", "Statut": "Validée"}
+{"CommandeID": 1010, "ClientID": 2008, "ProduitID": 3005, "Quantite": 1, "MontantTotal": 35.00, "DateCommande": "2024-09-25", "Statut": "Validée"}
